@@ -22,7 +22,7 @@ The prediction is done by an RNN model using feature importance derived from the
 st.subheader("Input Variant Features")
 st.markdown(
     """
-    <div style="color: pink;">
+    <div style="color: #FF007F;">
         "(Move the sliders to change the scores and see how it affects the prediction!)"
 
     </div>
@@ -82,9 +82,16 @@ st.write(f"**Prediction Score:** {score:.2f}")
 
 # Feature contributions to the prediction
 st.subheader("Feature Contributions to the Prediction")
-st.markdown("""
-Find the pathogenic value that will change the bars color to red! 
-""")
+st.markdown(
+    """
+    <div style="color: #FF007F;">
+        "Find the pathogenic value that will change the bars color to red!" 
+
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 feature_data = pd.DataFrame({
     "Feature": list(weights.keys()),
     "Contribution": [
