@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 col1, col2 = st.columns([2, 1.5])  # Increase the second column width for the logo
 
 with col2:
-    st.image("APP/logo.png", width=300)  # Adjust the logo size
+    st.image("logo.png", width=300)  # Adjust the logo size
 
 # Title and description
 st.title("Breast Cancer Variants Pathogenicity Predictor")
