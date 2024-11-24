@@ -1,6 +1,17 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+st.markdown(
+    """
+    <style>
+    /* Set the background color */
+    .stApp {
+        background-color: white;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.image("logo.png", width=200)  # Replace "logo.png" with the correct file name
 
