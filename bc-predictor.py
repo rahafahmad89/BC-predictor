@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+st.image("logo.png", width=200)  # Replace "logo.png" with the correct file name
+
 # Title and description
 st.title("Breast Cancer Variants Pathogenicity Predictor")
 st.markdown("""
