@@ -20,7 +20,9 @@ The prediction is done by an RNN model using feature importance derived from the
 
 # Input sliders for all features
 st.subheader("Input Variant Features")
-st.subheader("(Move the sliders to change the scores and see how it affects the prediction!)")
+st.markdown("""
+"(Move the sliders to change the scores and see how it affects the prediction!)"
+""")
 gerp = st.slider("GERP++ RS (0 to 5)", 0.0, 5.0, 2.5)
 phyloP = st.slider("phyloP Mammalian Score (0 to 5)", 0.0, 5.0, 2.5)
 cadd = st.slider("CADD PHRED Score (0 to 50)", 0.0, 50.0, 25.0)
@@ -73,6 +75,9 @@ st.write(f"**Prediction Score:** {score:.2f}")
 
 # Feature contributions to the prediction
 st.subheader("Feature Contributions to the Prediction")
+st.markdown("""
+Find the pathogenic value that will change the bars color to red! 
+""")
 feature_data = pd.DataFrame({
     "Feature": list(weights.keys()),
     "Contribution": [
