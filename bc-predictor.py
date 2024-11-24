@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-import streamlit as st
 
 # Create columns with adjusted width ratios
 col1, col2 = st.columns([2, 1.5])  # Increase the second column width for the logo
