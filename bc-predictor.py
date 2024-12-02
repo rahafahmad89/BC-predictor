@@ -12,7 +12,7 @@ with col2:
 # Title and description
 st.title("Breast Cancer Variants Pathogenicity Predictor")
 st.markdown("""
-This application demonstrates the role of the top features identified in predicting the pathogenicity of breast cancer genetic variants. 
+This application demonstrates the role of the identified features in predicting the pathogenicity of breast cancer genetic variants. 
 The prediction is done by an RNN model using feature importance derived from the analysis of the dataset.
 """)
 
@@ -118,6 +118,4 @@ st.pyplot(fig)
 
 # Closing note
 st.markdown("""
-**Note**: This is a model designed for demonstration purposes. The weights and thresholds are approximations 
-based on feature importance analysis. For real clinical applications, consult validated models and datasets.
-""")
+**Note**: This is a model designed for demonstration purposes. For real clinical applications, consult validated models and datasets.""")
